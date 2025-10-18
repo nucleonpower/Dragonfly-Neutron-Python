@@ -1,7 +1,6 @@
 # Dragonfly Neutron – Python GUI
 
-A lightweight, cross‑platform Python GUI that replaces the MegunoLink panel for your Dragonfly Neutron detector interface.  
-It communicates over serial, sends **Detector Bias** setpoints, parses MegunoLink‑style **TimePlot** messages, and plots **Counts (CPS)**, **Voltage (V)**, and **Current (µA)** in real time. It also exports data to CSV.
+A lightweight, cross‑platform Python GUI that replaces the MegunoLink panel for your Dragonfly Neutron detector interface.  It communicates over serial, sends **Detector Bias** setpoints, parses MegunoLink‑style **TimePlot** messages, and plots **Counts (CPS)**, **Voltage (V)**, and **Current (µA)** in real time. It also exports data to CSV.
 
 ---
 
