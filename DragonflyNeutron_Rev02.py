@@ -15,7 +15,7 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 #
 #
-# Dragonfly Neutron – Nucleon Power
+# Dragonfly Neutron – Nucleon Power - Rev.02
 # - HV setpoint Spinbox with arrow buttons; 15 V step; 0..1500; sends on every click
 # - Parses {TIMEPLOT|DATA|<Series>|T|<Value>} for C, I, V and plots live
 #
@@ -414,3 +414,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
