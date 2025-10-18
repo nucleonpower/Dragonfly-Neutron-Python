@@ -29,7 +29,7 @@ It communicates over serial, sends **Detector Bias** setpoints, parses MegunoLin
   - `matplotlib`
   - (GUI uses Tkinter, which ships with most Python installers)
 - **Drivers (if needed)**:
-  - Arduino/USB‑UART drivers (e.g., FTDI, CH340). Install the vendor driver if the port does not appear.
+  - USB‑UART drivers (e.g. FTDI). Install the vendor driver if the port does not appear.
 
 ### Install the Python deps
 
@@ -44,12 +44,12 @@ pip install pyserial matplotlib
 
 ## Getting Started
 
-1. **Flash the Arduino** with your MegunoLink‑based firmware (baud **115200**).
-2. **Connect** the device via USB.
+1. **Attach** He-3 Detector tube to interface
+2. **Connect** the interface via USB.
 3. **Run** the app:
 
    ```bash
-   python dragonfly_gui.py
+   python DragonflyNeutron_Rev02.py
    ```
 
 4. In **Communication**: **choose the Port → Connect**.  
@@ -160,7 +160,7 @@ Your firmware typically updates every ~100 ms. The GUI timestamps each message *
 
 ## Configuration & Customization
 
-Open `dragonfly_gui.py` and adjust these constants near the top:
+Open `DragonflyNeutron_Rev02.py` and adjust these constants near the top:
 
 ```python
 BAUD = 115200
@@ -197,7 +197,7 @@ Set `WINDOW_SECONDS` to your preferred horizon (e.g., 120 for 2 minutes).
   On Linux, ensure your user is in the `dialout` group (or equivalent), then re‑login.
 
 - **Connect succeeds but no data**  
-  Verify the Arduino is running and sending lines like `{TIMEPLOT|DATA|C|T|...}` at **115200**.  
+  Verify the detector interface is running and sending lines like `{TIMEPLOT|DATA|C|T|...}` at **115200**.  
   Test with Arduino Serial Monitor (close it before using this app). Check cables/power.
 
 - **Graph not moving / axis looks wrong**  
