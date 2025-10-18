@@ -220,6 +220,7 @@ The app clamps setpoints to **0–1500 V** and sends integers only, but it canno
 ```text
 project/
 ├─ dragonfly_gui.py      # the GUI application
+├─ LICENSE               # license
 └─ README.md             # this file
 ```
 
