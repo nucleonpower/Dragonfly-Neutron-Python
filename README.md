@@ -28,7 +28,7 @@ A lightweight, cross‑platform Python GUI that replaces the MegunoLink panel fo
   - `matplotlib`
   - (GUI uses Tkinter, which ships with most Python installers)
 - **Drivers (if needed)**:
-  - USB‑UART drivers (e.g. FTDI). Install the vendor driver if the port does not appear.
+  - USB‑UART drivers (FTDI). Install the vendor driver if the port does not appear.
 
 ### Install the Python deps
 
@@ -106,7 +106,7 @@ pip install pyserial matplotlib
   ```
   - `<integer>` range: **0–1500** (volts)
   - Examples:
-    - `!SetHV 0\r\n` (turns HVPS off per your firmware)
+    - `!SetHV 0\r\n` (turns HVPS off)
     - `!SetHV 450\r\n`
     - `!SetHV 1500\r\n`
 
